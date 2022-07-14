@@ -97,13 +97,12 @@ AddPost(id:string): void {
       
    } )}
   
-// console.log(id)
+
 
 back(id:string):void{
  
-  // this.router.navigate(['user-details'],{state:{data:this.getId}} );
   this.router.navigate([`/users/users-list/user-details`] ,{queryParams:{id:this.postId}}) ;
-  // users:this.getId(id)
+
 }
 
 }
