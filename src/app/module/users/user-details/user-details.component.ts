@@ -51,15 +51,15 @@ this.activatedRoute.queryParamMap.subscribe((params)=>{
 
     getDetails(id:string):void{
       
-      // this.router.navigate(['user-details'],{state:{data:this.getId}} );
+      
       this.router.navigate([`/users/users-list/user-details`] , {queryParams:{id:this.id}}) ;
-      // users:this.getId(id)
+  
     }
 
     getPost(id:string):void{
-      // this.router.navigate(['user-details'],{state:{data:this.getId}} );
+      
       this.router.navigate([`/users/users-list/user-details/posts`] ,{queryParams:{id:this.id}}) ;
-      // users:this.getId(id)
+    
     }
 
 
