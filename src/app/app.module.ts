@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostsComponent } from './posts/posts.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UserReactiveFormComponent } from './user-reactive-form/user-reactive-form.component';
+
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { UserReactiveFormComponent } from './user-reactive-form/user-reactive-fo
     PageNotFoundComponent,
      PostsComponent,
      UserFormComponent,
-     UserReactiveFormComponent,
+  
    
   ],
   imports: [
@@ -32,7 +32,7 @@ import { UserReactiveFormComponent } from './user-reactive-form/user-reactive-fo
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

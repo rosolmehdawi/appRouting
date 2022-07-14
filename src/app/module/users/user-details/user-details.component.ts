@@ -26,7 +26,9 @@ export class UserDetailsComponent implements OnInit {
 id='';
 ngOnInit() {
 // this.getData()
-  
+this.activatedRoute.queryParamMap.subscribe((params)=>{
+  this.id=params.get('id') ||'';
+})
   
   }
 
