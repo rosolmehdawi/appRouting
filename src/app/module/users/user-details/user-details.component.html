@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar  text-light fw-bold fw-underline">
+    <div class="container-fluid ">
+        <ul class="navbar-nav mx-auto " >
+    <button (click)="getData()" class="btn btn-primary m-2">Details</button>
+    <button   (click)="getPost(users.id)" class="btn btn-success m-2">Posts</button>
+    </ul>
+    </div>
+</nav>
+<button  routerLink="/users/users-list" class="btn btn-danger">Back</button>
+
+
+
+  <div  *ngIf="showdata">
+<div class="text-danger h1 text-center table-hover table-responsive-md">User Details</div>
+
+    <div class="card flex container-fluid" style="width:400px">
+      <img class="card-img-top rounded flex container-fluid"  src={{users.picture}} style="width:9rem"alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title p3 text-center">{{users.title}} .{{users.firstName}} {{users.lastName}}</h4>
+        <p class="card-text">Gender : {{users.gender}}</p>
+        <p class="card-text">Date of Brith : {{users.dateOfBirth}}</p>
+        <p class="card-text">Phone Number : {{users.phone}}</p>
+        <p class="card-text">Register Date : {{users.registerDate}}</p>
+        
+      
+
+        
+        <p class="card-text">Email: {{users.email}}</p>
+     
+          <!-- <div class="card-text  fw-bold" *ngFor="let loc of users.location |json">
+             location:   <div class="card-text">{{loc}}</div>-->
+
+          <!-- </div> >   -->
+      <p class="card-text">locaction :{{users.location |json}}</p>
+          <!-- <p class="card-text">country :{{users.location.country |json}}</p>
+          <p class="card-text">state :{{users.location.state |json}}</p>
+          <p class="card-text">timeZone :{{users.location.timezone |json}}</p> -->
+          
+
+        </div>
+
+
+   
+
+
+
+
+
+       
+      </div>
+    </div>
+  
+
+
+
+
+
+
+<router-outlet></router-outlet>

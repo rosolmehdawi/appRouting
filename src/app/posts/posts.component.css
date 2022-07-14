@@ -1,0 +1,95 @@
+.rounded {
+    border-radius: .25rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+
+.w-full {
+    width: 100%;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.h-60 {
+    height: 15rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+.grid {
+    display: grid;
+}
+.gap-4 {
+    gap: 1rem;
+}
+.grid-cols-1 {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+}
+
+.text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex {
+    display: flex;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+}
+.py-1 {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+.px-2 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.bg-pink-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219,39,119,var(--tw-bg-opacity));
+}
+.border {
+    border-width: 1px;
+}
+.rounded {
+    border-radius: .25rem;
+}
+.mb-1 {
+    margin-bottom: .25rem;
+}
+.mr-1 {
+    margin-right: .25rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.self-center {
+    align-self: center;
+}
+.grid {
+    display: grid;
+}

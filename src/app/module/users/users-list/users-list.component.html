@@ -1,0 +1,60 @@
+<div style="background-color: #eee;">
+  <div style="background-color: #eee;">
+    <section class="vh-400" style="background-color: #eee;" >
+        <div class="container h-500">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+<div >
+  <button [routerLink]="['user-form']" class="btn btn-primary btn-lg m-2"> Create User</button>
+</div>
+<div class="text-danger h1 text-center table-hover table-responsive-md">Users List</div>
+<table class="table table-bordered" style="background-color: white;">
+    <thead class="thead-dark border border-primary">
+      <tr>
+        <th scope="col">No</th>
+
+        <th scope="col">picture</th>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let user of users ;let i=index" class="border border-primary">
+        <th scope="row">{{i+1}}</th>
+        <td><img src={{user.picture}} class="rounded-full w-10  " style="width:9rem"></td>
+        <td>{{user.id}}</td>
+        <!-- (click)="getDetails(user.id)" 
+         routerLink="user-details"
+        
+          [routerLink]="['/user-details',user.id]" -->
+       
+        <td>{{user.title}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <!-- <td>{{user.picture}}</td> -->
+        <td><button class="btn btn-primary "
+       
+          (click)="getDetails(user.id)"
+             >View Details </button></td>
+        <td><button class="btn btn-danger " (click)="deleteUSER(user.id)">Delete </button></td>
+      
+        <td><button class="btn btn-success" (click)="goToUserForm(user.id)">Update </button></td>
+
+        <!-- (click)="getId(user.id)" -->
+      </tr>
+      
+      
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </section>
+  </div>
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+
