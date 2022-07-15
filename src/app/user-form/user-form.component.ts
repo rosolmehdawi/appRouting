@@ -14,7 +14,7 @@ export class UserFormComponent implements OnInit {
  updeateUser=false;
  
  genders:string[]=['Female','Male'];
- titles:string[]=["Mr", "Ms", "Mrs", "Miss", "Dr"];
+ titles:string[]=["Mr", "Ms", "Mrs", "Miss", "Dr",""];
  email:string='';
   model:UserFull={
     firstName: '', 
@@ -151,8 +151,8 @@ export class UserFormComponent implements OnInit {
         lastName:this.model.lastName, 
         email:this.model.email,
         // id: this.model.id,
-        titles:this.model.title,
-        genders: this.model.gender,
+        title:this.model.title,
+        gender: this.model.gender,
         dateOfBirth: this.model.dateOfBirth,
         registerDate: this.model.registerDate,
         phone: this.model.phone,
