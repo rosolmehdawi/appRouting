@@ -12,29 +12,30 @@ import { ActivatedRoute, ParamMap, Params, Router } from '@angular/router';
 export class UserFormComponent implements OnInit {
  createUSER=false;
  updeateUser=false;
- 
- genders:string[]=['Female','Male'];
- titles:string[]=["Mr", "Ms", "Mrs", "Miss", "Dr",""];
- email:string='';
-  model:UserFull={
-    firstName: '', 
-    lastName: '', 
-    email: '',
-    id: '',
-    title: '',
-    gender: '',
-    dateOfBirth: '',
-    registerDate: '',
-    phone: '',
-    picture: ''
-  }
-
   id:any; 
   handelSuccess=false;
   handelError=false;
   newUser:any=null;
   users:any=[];
   userId: any=[];
+  
+ genders:string[]=['Female','Male'];
+ titles:string[]=["Mr", "Ms", "Mrs", "Miss", "Dr",""];
+ email:string='';
+  model:UserFull={
+    firstName:this.users.firstName, 
+    lastName: this.users.lastName, 
+    email: this.users.email, 
+    id: this.users.id, 
+    title: this.users.title, 
+    gender:this.users.gender,
+    dateOfBirth: this.users.dateOfBirth, 
+    registerDate: this.users.registerDate, 
+    phone:this.users.phone, 
+    picture:this.users.picture
+  }
+
+ 
 
   constructor(private location:Location,private userService:UserService,private router:Router,private activatedRoute:ActivatedRoute) { }
 
